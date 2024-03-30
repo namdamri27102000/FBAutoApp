@@ -8,7 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
 options = webdriver.ChromeOptions()
-
+#####
 # Working with the 'add_argument' Method to modify Driver Default Notification
 options.add_argument('--disable-notifications')
 
