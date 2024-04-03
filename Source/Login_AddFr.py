@@ -8,18 +8,19 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
 options = webdriver.ChromeOptions()
-#####
+
 # Working with the 'add_argument' Method to modify Driver Default Notification
 options.add_argument('--disable-notifications')
 
 # Passing Driver path alongside with Driver modified Options
 browser = webdriver.Chrome(options=options)
+
+username = input("type your username: ")
+password = input("type your password: ")
+
 browser.get('https://www.facebook.com/groups/649228858868758')
 sleep(10)
 # Log In
-
-username = "yourusername"
-password = "yourpass"
 
 txtUser = browser.find_element(By.XPATH, '//*[@id=":r2:"]')
 txtUser.send_keys(username)
